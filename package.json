@@ -1,0 +1,28 @@
+{
+  "name": "dsh-context-curator",
+  "version": "0.1.0",
+  "description": "DSH-native context compaction that keeps text verbatim: scores every tool call and result with Jev, drops only the stale ones, and falls back to DSH's own summary whenever anything is uncertain. Ports the compaction core of fast-jev-compaction (MIT).",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/core.test.mjs",
+    "demo": "node tools/demo.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-compaction-basic": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-compaction-basic": {
+      "optional": true
+    }
+  }
+}
