@@ -1,5 +1,7 @@
 # dsh-context-curator
 
+[English](README.en.md) | **简体中文**
+
 DSH 的上下文压缩后端：**删旧工具垃圾，其余内容逐字保留**。
 
 它是 `@deepseek-ai/dsh-compaction-basic` 的替代品（compaction group 里换一行），完整继承后者的触发时机、保留策略、日志事务和 surface 替换，只覆盖它文档里唯一允许覆盖的那个钩子：
